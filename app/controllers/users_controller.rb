@@ -56,14 +56,15 @@ end
 
   # Before filters
 
-  # Confirm logged in user
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = "Please log in."
-      redirect_to login_url
-    end
-  end
+  # moved to applicaion controller
+  # # Confirm logged in user
+  # def logged_in_user
+  #   unless logged_in?
+  #     store_location
+  #     flash[:danger] = "Please log in."
+  #     redirect_to login_url
+  #   end
+  # end
 
   # Confirm correct user
   def correct_user
